@@ -5,6 +5,7 @@ pintas = ["picas", "treboles", "diamantes", "corazones"]
 valores = letras + [str(i) for i in range (2,11)]
 mazo = [(v,p) for v in valores for p in pintas]
 
+
 def repartirCartas(numCartas):
     mazoJugador = sample(mazo,numCartas)
     for carta in mazoJugador :
@@ -84,4 +85,4 @@ def iniciarJuego():
             print("¡HAS PERDIDO!")
             break
 
-iniciarJuego()   
+iniciarJuego()
